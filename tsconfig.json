@@ -1,0 +1,7 @@
+{
+	"compilerOptions": {
+		"removeComments": false,
+		"target": "ES5",
+		"module": "commonjs"
+	}
+}

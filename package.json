@@ -1,0 +1,14 @@
+{
+  "name": "gulp-type-script-example",
+  "version": "1.0.0",
+  "description": "",
+  "author": "",
+  "license": "MIT",
+  "dependencies": {
+    "gulp": "^3.9.1",
+    "gulp-typescript": "^2.12.1",
+    "gulp-sourcemaps": "^1.6.0",
+    "gulp-concat": "^2.6.0"
+  },
+  "devDependencies": { }
+}
