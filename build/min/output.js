@@ -1,0 +1,2 @@
+var App;!function(r){var e=function(){function r(r){this.greeting=r}return r.prototype.greet=function(){return"<h1>"+this.greeting+"</h1>"},r}();r.Greeter=e}(App||(App={}));var App;!function(r){var e=function(){function e(){this._greeter=new r.Greeter("Hello, world!")}return e.prototype.main=function(){document.body.innerHTML=this._greeter.greet()},e}();r.Program=e}(App||(App={}));var program=new App.Program;program.main();
+//# sourceMappingURL=output.js.map

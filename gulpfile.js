@@ -5,6 +5,8 @@ var concat = require('gulp-concat');
 
 var tsProject = ts.createProject('tsconfig.json');
 
+var uglify = require('gulp-uglify');
+
 gulp.task('build', function () {
     var tsResult =
         gulp.src('src/**/*.ts')
@@ -19,5 +21,13 @@ gulp.task('build', function () {
     return js;
 });
 
-gulp.task('default', ['build']);
+gulp.task('compress', function() {
+  return gulp.src('build/*.js')
+    .pipe(sourcemaps.init())
+    .pipe(uglify())
+    .pipe(sourcemaps.write('.'))
+    .pipe(gulp.dest('build/min'));
+});
+
+gulp.task('default', ['build','compress']);
 
